@@ -1,108 +1,393 @@
-\chapter{Theoretischer Hintergrund}\label{sec:theoretischer_hintergrund}
+\chapter{Hintergrund und Related Work}\label{sec:theoretischer_hintergrund}
 
 %TODO: hier noch Einleitungssatz einfügen
+In diesem Kapitel wird der Status Quo des psychischen Gesundheitssystems in Deutschland beschrieben. 
+Dazu wird zunächst eine Bestandsaufnahme der psychischen Bevölkerungsgesundheit durchgeführt 
+und auf mögliche Defizite des Gesundheitssystems eingegangen
 
-\section{Psychische Gesundheit in der Bevölkerung}\label{subsec:psychische_gesundheit}
 
-Das Thema mentale Gesundheit ist in den vergangenen Jahren in der Gesellschaft immer präsenter geworden. Dies ist unter anderem auch auf eine zunehmende mediale Berichterstattung mit einer offeneren Darstellung von psychischen Krankheiten zurückzuführen, die nicht zuletzt auch durch ein generell gestiegenes gesellschaftliches Bewusstsein und eine Sensibilisierung der Menschen bezüglich mentaler Gesundheit und psychischer Störungen bedingt ist.
+\section{Psychische Gesundheitspflege}\label{subsec:psychische_gesundheitspflege}
 
-\subsection{Entwicklung psychischer Gesundheit der Bevölkerung}\label{subsubsec:entwicklung_psychische_gesundheit}
+Das Thema mentale Gesundheit ist in den vergangenen Jahren in der Gesellschaft immer präsenter geworden. 
+Dies ist unter anderem auch auf eine zunehmende mediale Berichterstattung mit einer offeneren Darstellung von psychischen Krankheiten zurückzuführen, 
+die nicht zuletzt auch durch ein generell gestiegenes gesellschaftliches Bewusstsein 
+und eine Sensibilisierung der Menschen bezüglich mentaler Gesundheit und psychischer Störungen bedingt ist.
 
+\subsection{Entwicklung der psychischen Gesundheit der Bevölkerung}\label{subsubsec:entwicklung_psychische_gesundheit}
+
+% Thema: administrative Daten vs. epidemiologische Studien
 In routinemäßig gesammelten administrativen Daten von Krankenkassen und Rentenversicherungen, 
 sowie in Zahlen über durch psychische Beschwerden bedingte Arbeitsausfälle 
 lässt sich ein Anstieg der Fälle verzeichnen 
-\cite[]{latex:arzteblatt,latex:dak}. \\ %(Ärzteblatt, 2024; DAK-Gesundheit 2024).
+\cite[]{arzteblatt_hochststand_2024,dak-gesundheit_entwicklungen_2024}. %(Ärzteblatt, 2024; DAK-Gesundheit 2024).
 In der Publikation “Psychreport 2024”, einer jährlich erscheinenden Datenaufbereitung, 
 die von der deutschen Krankenkasse DAK-Gesundheit veröffentlicht wird, 
 werden verschiedene relevante Daten im Bezug auf psychische Gesundheit 
 und deren Entwicklung mit besonderem Fokus auf den Arbeitskontext 
-in verschiedenen Betrachtungszeiträumen gesammelt dargestellt. \\
-
+in verschiedenen Betrachtungszeiträumen gesammelt dargestellt. 
 Demnach stieg die Anzahl der krankheitsbedingten Arbeitsausfälle 
 aufgrund von psychischen Erkrankungen im Jahr 2023 verglichen mit dem Vorjahr um 21\% 
 und liegt mittlerweile hinter Erkrankungen des Atmungssystems 
 und Muskel-Skelett-System Erkrankungen auf Platz drei der Erkrankungsgruppen, 
-die die meisten Ausfalltage bei der Arbeit verursachen. 
-
+die die meisten Ausfalltage bei der Arbeit verursachen.
 Ein besonders starker Anstieg der Arbeitsunfähigkeits-Fälle ist bei der Altersgruppe der 20-24 Jährigen 
 sowie der 25-29 Jährigen zu erkennen. Hier stiegen die Fallzahlen 2023 
-um 34\% bzw. 31\% im Vergleich zum Vorjahr. \\
+um 34\% bzw. 31\% im Vergleich zum Vorjahr. 
 In den 10 Jahren im Zeitraum 2013-2023 ist insgesamt ein Anstieg 
 der durch psychische Erkrankungen bedingten Fehltage bei der Arbeit von 52\% festzustellen 
-\cite[]{latex:dak}. %(DAK Gesundheit, 2024).
+\cite[]{dak-gesundheit_entwicklungen_2024}. %(DAK Gesundheit, 2024).
 
+% Thema: Diagnoseprävalenz
 Ein weiterer Indikator für den Zustand der psychischen Gesundheit der Bevölkerung ist die Diagnoseprävalenz, 
 bei der administrative Daten betrachtet werden, 
-um unter anderem die Auswirkungen von Diagnosen psychischer Störungen auf die ärztliche und psychotherapeutische Behandlung zu analysieren \cite[]{thom2024trends}. \\ %(Thom, et al., 2024).
-
+um unter anderem die Auswirkungen von Diagnosen psychischer Störungen auf die ärztliche 
+und psychotherapeutische Behandlung zu analysieren \cite[]{thom_trends_2024}.    %(Thom, et al., 2024).
 Allerdings sind diese Daten nur eingeschränkt als Indikator für die Krankheitshäufigkeit in der Bevölkerung tauglich. 
 Gründe hierfür können unter anderem darauf zurückgeführt werden, 
 dass manche Kranke keine ärztliche oder psychotherapeutische Hilfe in Anspruch nehmen 
 und dass Behandelnde psychische Störungen in machen Fällen entweder gar nicht erfassen 
-oder sogar überdiagnostizieren \cite[]{thom2024trends}. \\ %(Thom, et al. 2024). 
-Die Diagnoseprävalenz-Zahlen verändern sich unterschiedlich stark über verschiedene Betrachtungszeiträume und durch das Heranziehen verschiedener Auswertungen mit unterschiedlicher Methodik und Thematik lassen sich daraus schwer konkrete Schlussfolgerungen ziehen. Trotzdem lässt sich in den Diagnoseprävalenz-Daten zu psychischen Störungen im Betrachtungszeitraum 2012-2022 ein relativer Zuwachs von über 13\% beobachten \cite[]{thom2024trends}. %(Thom, et al., 2024). 
+oder sogar überdiagnostizieren \cite[]{thom_trends_2024}.        %(Thom, et al. 2024). 
+Die Diagnoseprävalenz-Zahlen verändern sich unterschiedlich stark über verschiedene Betrachtungszeiträume 
+und durch das Heranziehen verschiedener Auswertungen mit unterschiedlicher Methodik und Thematik 
+lassen sich daraus schwer konkrete Schlussfolgerungen ziehen. 
+Trotzdem lässt sich in den Diagnoseprävalenz-Daten zu psychischen Störungen im Betrachtungszeitraum 
+2012-2022 ein relativer Zuwachs von über 13\% beobachten \cite[]{thom_trends_2024}.     %(Thom, et al., 2024). 
+Eine durch das Robert-Koch-Institut beobachtete Zunahme von Symptomen zu Depressionen und Angststörungen 
+im Zeitraum 2019-2024 \cite[]{robert-koch-institut_beobachtung_2024}   %(RKI, 2024) 
+scheint sich allerdings zumindest bis 2022 nicht in einer Zunahme der ambulanten Diagnoseprävalenz niederzuschlagen 
+\cite[]{thom_trends_2024}. %(Thom, et al., 2024). 
 
-Eine durch das Robert-Koch-Institut beobachtete Zunahme von Symptomen zu Depressionen und Angststörungen im Zeitraum 2019-2024 \cite[]{latex:rki} %(RKI, 2024) 
-scheint sich allerdings zumindest bis 2022 nicht in einer Zunahme der ambulanten Diagnoseprävalenz niederzuschlagen \cite[]{thom2024trends}. %(Thom, et al., 2024). 
+% Thema: Interpretation der Daten (Don’t Panic!)
+Auch wenn aufgrund dieser Trends in den administrativen Daten bei manchen zunächst 
+die instinktive Reaktion ausgelöst werden könnte, alarmierende Schlussfolgerungen daraus zu ziehen, 
+ist bei der Interpretation der Zahlen Vorsicht geboten.
+Manche Medien nutzen diese Daten beispielsweise, um eine generelle Zunahme von psychischen Störungen 
+in der Bevölkerung zu suggerieren 
+\cite[]{nickels_psychische_2020,knollenborg_zahl_2024}. %(Nickels, 2020; Knollenborg, 2024).
+Vieles deutet darauf hin, dass für eine verlässliche Interpretation der beobachteten Trends 
+eine umfassende Auswertung kontextualisierender Evidenz nötig ist, was allerdings durch einen Mangel 
+an geeigneten epidemiologischen Studien für den Beobachtungszeitraum in Deutschland erschwert wird 
+\cite[]{thom_trends_2024}.    %(Thom, et al., 2024).
+Es ist also kritisch zu betrachten, ob die zunehmende Präsenz von psychischen Störungen sowohl in der Öffentlichkeit, 
+als auch in den administrativen Daten, auch als Hinweis auf eine gestiegene Zahl 
+von tatsächlich psychisch kranken Menschen interpretiert werden kann \cite[]{wagner_psychische_2021}. %(Wagner, 2021).
+
+% Thema: Interpretation von Ursachen für vermeintlichen Anstieg
+Epidemiologischen Studien zufolge kann ein solcher Anstieg an psychischen Störungen nicht unbedingt bestätigt werden. 
+Auch eine Diskussion über mögliche Ursachen eines vermeintlichen Anstiegs psychischer Störungen 
+sollte kritisch betrachtet werden.
+Manche Veröffentlichungen leiten die Ursachen von gesellschaftlichen Faktoren 
+wie z.B. einer “krankmachenden Beschleunigung der Arbeitswelt durch Digitalisierung und neue Medien” ab 
+\cite[S. 6]{wagner_psychische_2021}. %(Wagner, 2021, S.6). 
+Einerseits ist es berechtigt, in diesem Kontext gesellschaftliche Faktoren heranzuziehen, 
+weil diese durchaus auch krank machen und Leiden verursachen können. 
+Zudem gibt es im Feld der Psychiatrie, verglichen mit anderen medizinischen Bereichen, die Besonderheit, 
+dass eine Krankheit hier besonders eng mit dem sozialen und gesellschaftlichen Kontext verbunden ist 
+und deshalb schwer abgekoppelt von der gesellschaftlichen Wahrnehmung betrachtet werden kann. 
+“Andererseits bestimmen gesellschaftliche Diskurse auch, 
+wie Unbehagen, Unzufriedenheit, subjektives Leid von den Betroffenen 
+und ihren Angehörigen gedeutet wird” \cite[S.6]{wagner_psychische_2021}.    \\ %(Wagner, 2021, S.6). 
+Also kann das übermäßige Thematisieren von einer Zunahme psychischer Störungen auch dazu führen, 
+dass normal vorkommende nicht vermeidbare menschliche Leidenszustände 
+(wie z.B. länger als zwei Wochen andauernde Trauer nach dem Tod von Angehörigen) 
+oder vereinzelt auftretende Beeinträchtigungen zu schnell pathologisiert und medikalisiert werden. 
+Dies kann unter anderem zur Folge haben, dass “Gesunde beunruhigt und therapiert werden, 
+während für wirklich Kranke die Ressourcen fehlen” \cite[S.11]{wagner_psychische_2021}. %(Wagner, 2021, S. 11).
 
 
-Auch wenn aufgrund dieser Trends in den administrativen Daten bei manchen zunächst die instinktive Reaktion ausgelöst werden könnte, alarmierende Schlussfolgerungen daraus zu ziehen, ist bei der Interpretation der Zahlen Vorsicht geboten.
-Manche Medien nutzen diese Daten beispielsweise, um eine generelle Zunahme von psychischen Störungen in der Bevölkerung zu suggerieren \cite[]{latex:nickels,latex:knollenborg}. %(Nickels, 2020; Knollenborg, 2024).
-Vieles deutet darauf hin, dass für eine verlässliche Interpretation der beobachteten Trends ein umfassende Auswertung kontextualisierender Evidenz nötig ist, was allerdings durch einen Mangel an geeigneten epidemiologischen Studien für den Beobachtungszeitraum in Deutschland erschwert wird 
-\cite[]{thom2024trends}. %(Thom, et al., 2024).
-
-
-Es ist also kritisch zu betrachten, ob die zunehmende Präsenz von psychischen Störungen sowohl in der Öffentlichkeit, als auch in den administrativen Daten, auch als Hinweis auf eine gestiegene Zahl von tatsächlich psychisch kranken Menschen interpretiert werden kann \cite[]{wagner2021psychische}. %(Wagner, 2021).
-Epidemiologischen Studien zufolge kann ein solcher Anstieg an psychischen Störungen nicht unbedingt bestätigt werden. Auch eine Diskussion über mögliche Ursachen eines vermeintlichen Anstiegs psychischer Störungen sollte kritisch betrachtet werden.
-Manche Veröffentlichungen leiten die Ursachen von gesellschaftlichen Faktoren wie z.B. einer “krankmachenden Beschleunigung der Arbeitswelt durch Digitalisierung und neue Medien” ab 
-\cite[S. 6]{wagner2021psychische}. %(Wagner, 2021, S.6). 
-Einerseits ist es berechtigt, in diesem Kontext gesellschaftliche Faktoren heranzuziehen, weil diese durchaus auch krank machen und Leiden verursachen können. Zudem gibt es im Feld der Psychiatrie, verglichen mit anderen medizinischen Bereichen, die Besonderheit, dass eine Krankheit hier besonders eng mit dem sozialen und gesellschaftlichen Kontext verbunden ist und deshalb schwer abgekoppelt von der gesellschaftlichen Wahrnehmung betrachtet werden kann. “Andererseits bestimmen gesellschaftliche Diskurse auch, wie Unbehagen, Unzufriedenheit, subjektives Leid von den Betroffenen und ihren Angehörigen gedeutet wird” \cite[S. 6]{wagner2021psychische}. %(Wagner, 2021, S.6). 
-Also kann das übermäßige Thematisieren von einer Zunahme psychischer Störungen auch dazu führen, dass normal vorkommende nicht vermeidbare menschliche Leidenszustände (wie z.B. länger als zwei Wochen andauernde Trauer nach dem Tod von Angehörigen) oder vereinzelt auftretende Beeinträchtigungen zu schnell pathologisiert und medikalisiert werden. Dies kann unter anderem zur Folge haben, dass “Gesunde beunruhigt und therapiert werden, während für wirklich Kranke die Ressourcen fehlen” 
-\cite[S. 11]{wagner2021psychische}. %(Wagner, 2021, S. 11).
 
 
 \subsection{Folgen von psychischen Krankheiten}\label{subsubsec:folgen_psychischer_krankheiten}
 
+%Thema: Folgen von psychischen Krankheiten
+Psychische Störungen können neben systemischen Auswirkungen, 
+wie der wirtschaftlichen Belastung für die Gesellschaft, 
+auch schwere persönliche Folgen für Betroffene und ihre Angehörigen haben. 
+Depressionen und Angststörungen beeinträchtigen weite Teile des Lebens, 
+von der Leistungsfähigkeit bei der Arbeit bis zum sozialen Bereich 
+und der Gesundheit \cite[]{brenes_anxiety_2007}    \\ %(Brenes, 2007). 
+Bei depressiven Erwachsenen ist die Lebensqualität stärker beeinträchtigt, 
+als bei Erwachsenen mit Krankheiten wie Diabetes, erhöhtem Blutdruck oder chronischen Lungenerkrankungen 
+und von Angststörungen Betroffene sind durch verminderte Arbeitsproduktivität, 
+eingeschränkte soziale Kontaktfähigkeit, physischen Gebrechen 
+und sogar Sterblichkeit beeinträchtigt 
+\cite[]{weisel_innovations_2021,brenes_anxiety_2007} %(Weisel, 2021; Brenes, 2007). 
 
-Psychische Störungen können neben systemischen Auswirkungen, wie der wirtschaftlichen Belastung für die Gesellschaft, auch schwere persönliche Folgen für Betroffene und ihre Angehörigen haben. Depressionen und Angststörungen beeinträchtigen weite Teile des Lebens, von der Leistungsfähigkeit bei der Arbeit bis zum sozialen Bereich und der Gesundheit \cite[]{brenes2007anxiety} %(Brenes, 2007). 
-Bei depressiven Erwachsenen ist die Lebensqualität stärker beeinträchtigt, als bei Erwachsenen mit Krankheiten wie Diabetes, erhöhtem Blutdruck oder chronischen Lungenerkrankungen und von Angststörungen Betroffene sind durch verminderte Arbeitsproduktivität, eingeschränkte soziale Kontaktfähigkeit, physischen Gebrechen und sogar Sterblichkeit betroffen \cite[]{weisel2021digital,brenes2007anxiety}  %(Weisel, 2021; Brenes, 2007). 
-Wenn bei physischen Krankheiten wie der Koronaren Herzerkrankung psychische Störungen wie Depressionen und Angststörungen als Komorbidität (Begleiterkrankung) auftreten, kann das zu einem erhöhten Sterblichkeitsrisiko beitragen (Doering et al., 2010). 
-Abhilfe für die durch psychische Störungen ausgelösten Beschwerden kann neben einer medikamentösen Behandlung durch Psychopharmaka vor allem eine Psychotherapie schaffen. Die Wirksamkeit von verschiedenen psychotherapeutischen Interventionen ist weitreichend zweifelsfrei belegt. Durch Psychotherapie profitieren durchschnittlich 50-70\% der Behandelten, wobei eine schnellere, stärkere und nachhaltigere Wirkung erzielt werden kann, als durch einen natürlichen Heilungsprozess oder ein unterstützendes Umfeld allein (Wagner, 2021 S.55).
+
+% Thema: Komorbidität
+Wenn bei bestimmten physischen Krankheiten wie beispielsweise einer Koronaren Herzerkrankung 
+psychische Störungen wie Depressionen und Angststörungen als Komorbidität (Begleiterkrankung) auftreten, 
+kann dies zu einem erhöhten Sterblichkeitsrisiko beitragen \cite[]{doering_persistent_2010} %(Doering et al., 2010). 
+Zudem sind verschiedene psychische Störungen auch untereinander hochgradig komorbid, 
+also das Auftreten einer psychischen Störung kann das Auftreten einer weiteren psychischen Störung begünstigen. 
+Die Komorbiditätsraten bei psychischen Krankheiten schwanken zwischen 44\% und 94\%, 
+hierbei sind als Korrelate (Faktoren, die wechselseitige Beziehungen bedingen) 
+von einer erhöhten Rate psychischer Störungen und Komorbidität folgende Faktoren anzuführen: 
+weibliches Geschlecht (außer bei Suchterkrankungen), unverheiratet zu sein, eine untere Gesellschaftsschicht 
+und ein schlechter somatischer Gesundheitszustand \cite[]{jacobi_prevalence_2004} %(Jacobi, et al., 2004). 
+Eine besonders hohe Komorbidität herrscht bei den beiden psychischen Krankheiten Angststörungen und Depressionen. 
+Von den Menschen, bei denen eine Depression diagnostiziert wurde, sind 85\% 
+gleichzeitig auch von Angststörungen betroffen, und 90\% der Menschen, die mit Angststörungen diagnostiziert wurden,
+sind auch von erheblichen Depressionen betroffen \cite[]{bakker_mental_2016} % (Bakker, et al., 2016).
+
+
+% Thema: Therapie als Abhilfe (Evidenz iz da)
+Abhilfe für die durch psychische Störungen ausgelösten Beschwerden kann neben einer medikamentösen Behandlung 
+durch Psychopharmaka vor allem eine Psychotherapie schaffen. 
+Die Wirksamkeit von verschiedenen psychotherapeutischen Interventionen ist weitreichend zweifelsfrei belegt. 
+Durch Psychotherapie profitieren durchschnittlich 50-70\% der Behandelten, 
+wobei eine schnellere, stärkere und nachhaltigere Wirkung erzielt werden kann, 
+als durch einen natürlichen Heilungsprozess oder ein unterstützendes Umfeld allein 
+\cite[S.55]{wagner_psychische_2021} %(Wagner, 2021 S.55).
 
 
 
-\subsection{Versorgungsdefizite des Gesundheitssystems}\label{subsubsec:versorgungsdefizite}
+
+\subsection{Versorgungsdefizite und weitere Hürden für die psychische Gesundheitsversorgung}\label{subsubsec:versorgungsdefizite}
+
+
+% Thema: psychische Gesundheit - Überlastung des Gesundheitssystems (Therapieplätze) 
+Trotz der großen Belastung durch psychische Krankheiten und obwohl Deutschland eines der Länder mit der weltweit 
+höchsten Nutzungsrate medizinischer Gesundheitsdienste ist \cite[]{mack_selfreported_2014} % (Mack et al., 2014), 
+gibt ein Großteil der von psychischen Störungen Betroffenen in Deutschland an, 
+keine mentalen Gesundheitsdienste in Anspruch genommen zu haben 
+\cite[]{weisel_innovations_2021,mack_selfreported_2014} % (Weisel, 2021; Mack, etl al., 2014). 
+Dieser Zustand deckt sich größtenteils mit der Situation in anderen europäischen Ländern 
+\cite[]{alonso_use_2004} % (Alonso, et al., 2004).
+
+% Thema: viel Zeit vergeht bis zu Antritt einer Therapie
+Zudem dauert es oft sehr lange, bis sich Betroffene professionelle Hilfe holen. 
+Zwischen dem Auftreten von Symptomen einer psychischen Krankheit und der Inanspruchnahme 
+von Diensten der mentalen Gesundheitsversorgung vergehen bei Betroffenen, 
+die schon über 12 Monate mit der Störung leben, durchschnittlich 6-7 Jahre 
+\cite[]{mack_selfreported_2014} % (Mack, et al., 2014).
+Um zu erklären, warum so viele Betroffene keine Therapie in Anspruch nehmen, 
+lohnt ein Blick auf strukturelle Faktoren, die ein großer Grund für die mangelnde Behandlung 
+von psychischen Störungen sind 
+\cite[]{weisel_innovations_2021,straus_chancenungleichheit_2015}    \\ % (Weisel, 2021; Strauß, 2015). 
+Strukturelle Hürden wie ein eingeschränkter Zugang zu Behandlungen, ausgelöst nicht zuletzt durch Versorgungsdefizite, 
+können für eine Verschleppung der Krankheit sorgen. Zwischen der ersten Anfrage und einem Erstgespräch 
+mit einer Psychotherapeutin oder einem Psychotherapeuten vergehen im Schnitt 9 Wochen, w
+enn diese keine Warteliste führen, und die Dauer zwischen einer Anfrage 
+und dem tatsächlichen Therapiebeginn beträgt durchschnittlich 17 Wochen 
+\cite[]{straus_chancenungleichheit_2015} % (Strauß, 2015).
+
+% Thema: persönliche Attribute als Hürde
+Hinzu kommt, dass es gemäß dem rege diskutierten Buch “Psychotherapy - the purchase of friendship” 
+von William Schofield (Schofield, 1964), einem kritischen Essay von Paul E. Meehl (Meehl, 1973) 
+und dem Buch “Les Psychotherapies” von Winfrid Huber (Huber, 1993) bestimmte persönliche Attribute 
+von potentiellen Patientinnen und Patienten zu geben scheint, die beim Zugang zu psychotherapeutischen Behandlungen 
+zu Benachteiligung beziehungsweise Bevorzugung führen können. \\
+Diese Vermutungen, die hauptsächlich auf den klinischen Erfahrungen der Autoren basierten, 
+wurden im Nachgang durch evidenzbasierte Untersuchungen geprüft, die zusammengefasst zu dem Schluss kamen, 
+dass tatsächlich eine Reihe an Charakteristika existiert, 
+die als wichtige Prädiktoren für eine Nichtinanspruchnahme beziehungsweise einen eingeschränkten Zugang 
+zu Psychotherapie gelten: niedriger sozioökonomischer Status, ethnische Minderheiten, höheres Lebensalter, 
+männliches Geschlecht, Angst vor Stigmatisierung und geringer Leidensdruck bei Betroffenen 
+trotz hoher Belastung des Umfelds \cite[]{straus_chancenungleichheit_2015} % (Strauß, 2015).
+
+%Thema: einstellungsbezogene Barrieren
+Darüber hinaus gibt es einstellungsbezogene Barrieren, die noch einflussreicher im Bezug auf eine Nichtinanspruchnahme 
+oder auch den Abbruch einer psychotherapeutischen Behandlung  sein können, als zuvor erwähnte strukturelle Hürden 
+\cite[S.11]{weisel_innovations_2021} % (Weisel, 2021, S.11). 
+Dazu gehören neben dem Unterschätzen der Schwere von mentalen Komplikationen, was oft auf eine unzureichende 
+gesundheitliche Bildung zurückzuführen ist, auch ein Mangel an Motivation oder fehlende Bereitschaft, 
+sich Hilfe zu holen. Auch Scham und Angst vor Stigmatisierung im Zusammenhang mit psychischer Gesundheit und Therapie, 
+sowie das explizite Anliegen, sich selbstständig unabhängig von professionellen 
+Expertinnen und Experten um die mentalen Probleme zu kümmern sind bei der Betrachtung relevant 
+\cite[S.11]{weisel_innovations_2021} % (Weisel, 2021, S.11).
+
+
 
 
 
 \section{Digitale psychische Gesundheitspflege}\label{subsec:digitale_psychische_gesundheit}
 
 
-\subsection{interaktive selbsthilfe-Übungen}\label{subsubsec:interaktive_selbsthilfe_uebungen}
+% Thema: Einleitung zu digitalen Mental Health Anwendungen
+Um den geschilderten Problemen mit dem psychotherapeutischen Angebot entgegenzutreten, 
+können digitale psychische Gesundheitsangebote eine vielversprechende Option sein.
+Solche digitalen Interventionen haben das Potenzial, Behandlungslücken zu schließen 
+und die Gesundheitsversorgung zu revolutionieren, indem sie den Zugang zu innovativen, 
+niederschwelligen und hochwirksamen Interventionen erleichtern 
+\cite[S.138]{weisel_innovations_2021} %(Weisel, 2021, S.138). 
+Digitale psychische Gesundheitsangebote existieren in verschiedenen Darstellungsformen, 
+die zu unterschiedlichen Zwecken eingesetzt werden und verschiedene Ziele verfolgen. 
+Zu diesen Darstellungsformen gehören: interaktive selbsthilfe-Übungen, Virtual- oder Augmented Reality, 
+Serious-Games, Avatar-geführte Sitzungen, automatisierte Gedächtnis-, Feedback- und Bestärkungs- Interventionen 
+und Smartphone- und Wearable- Sensoren \cite[S.10]{weisel_innovations_2021} % (Weisel, 2021, S.10). 
+
+
+
+\subsection{Internet-Interventionen}\label{subsubsec:Internet-Interventionen}
+
+
+In der digitalen psychischen Gesundheitspflege sind vor allem interaktive selbsthilfe-Übungen 
+(auch Internet-Interventionen genannt) verbreitet und auch diese Arbeit fokussiert sich 
+primär auf diese Darstellungsform, oder genauer: 
+Digitale mobile Anwendungen für transdiagnostische Psychoedukation (Mental Health Apps).
+
+% Thema: Vorteile von Internet-Interventionen
+Der Einsatz von Internet-Interventionen hat viele Vorteile: Zu den wichtigsten Vorteilen 
+zählen unter anderem ein besonders niederschwelliger Zugang, die Annehmlichkeit der Behandlung, 
+das Potential auf Anonymität während der Behandlung, die Unabhängigkeit des therapeutischen Materials 
+von Zeit und Ort, die Flexibilität und Möglichkeit, die Behandlung in den Alltag zu integrieren und das 
+Potential, Selbstwirksamkeit zu fördern \cite[S.10]{weisel_innovations_2021}. % (Weisel, 2021, S.10). 
+
+%Thema: Umbrella Review zu online-KVT
+In einem Umbrella Review von neun Metaanalysen, in denen insgesamt 166 Studien ausgewertet wurden, 
+die durch das Internet vermittelte Formen der kognitiven Verhaltenstherapie untersuchen, hat sich gezeigt, 
+dass diese Darstellungsform einen moderaten bis großen Effekt bei Panikstörungen, sozialer Angststörung, 
+generalisierter Angststörung, posttraumatischer Belastungsstörung und schweren Depressionen haben kann 
+\cite[]{andersson_internet_2019}. % (Andersson et al., 2019). 
+Außerdem schließt dieses Umbrella Review weitere Analysen ein, in denen transdiagnostische Behandlungen betrachtet 
+und Face-to-Face Behandlungen mit Internet Interventionen verglichen werden. 
+Eine wachsende Zahl an Metaanalysen verschiedener Studien zu diesem Thema deutet mittlerweile an, 
+dass durch das Internet vermittelte kognitive Verhaltenstherapie nicht nur funktioniert, 
+sondern auch eine vergleichbare Wirksamkeit, verglichen mit Face-to-Face Therapie haben kann 
+\cite[]{andersson_internet_2019}. % (Anderson et al., 2019).
+
+%Thema Überleitung zu mental Health Apps
+Wenn von Internet-Interventionen oder online Therapieprogrammen die Rede ist, 
+sind diese allerdings vorwiegend als “langwierige Sitzungen vor einem herkömmlichen Computerbildschirm” 
+\cite[]{anthes_e_mental_2016}. % (Anthes, 2016) angelegt. 
+In diesem Kontext können Mental Health Smartphone Apps eine moderne Chance sein, die gegenüber “herkömmlichen” 
+Internet-Interventionen vielseitige Vorteile bieten können, wobei “herkömmlich” hier vielleicht 
+nicht der treffendste Begriff ist, da Internet-Interventionen als solche schon eine Innovation 
+gegenüber der konventionellen Face-to-Face Psychotherapie darstellen. 
+
+
 
 \subsection{Mental Health Apps}\label{subsubsec:mental_health_apps}
 
 
+% Einleitung MHAs
+Die gesonderte Betrachtung von Mental Health Smartphone Apps als Bestandteil 
+oder je nach Sichtweise auch als Erweiterung oder Weiterentwicklung von psychotherapeutischen 
+Internet-Interventionen kann sich lohnen, da diese eine nicht zu vernachlässigende Technologie darstellen, 
+die zeitgemäß, niederschwellig und praxisnah eine Therapierung psychischer Störungen unterstützen kann. 
+Wichtig zu erwähnen ist allerdings, dass Mental Health Apps (MHAs) dabei keinen Ersatz für eine professionelle 
+Psychotherapie darstellen sollten, sondern vielmehr als Begleitung betrachtet werden sollten, 
+die zusätzlich zu einer Therapie genutzt werden können. Auch als Überbrückung für Betroffene, 
+die durch Versorgungsdefizite oder andere Barrieren eingeschränkt sind, können MHAs interessant sein, 
+so wie beispielsweise während der Wartezeit auf einen Therapieplatz.
 
-\section{Gamification in Mental Health Apps}\label{subsec:gamification_in_mental_health_apps}
+% Thema: Vorteile von MHAs
+Laut Jen Martin, der Programme Managerin von MindTech, einem vom britischen 
+National Institute for Health Research finanzierten Zentrum für innovative Mental Health Technologien, 
+sind MHAs vor allem deshalb relevant, weil sie eine Möglichkeit darstellen, flexiblen Zugang zu Behandlungen zu bieten, 
+die zum Lebensstil der Patientinnen und Patienten passen und darüber hinaus auch Probleme rund um das Stigma angehen, 
+das mit psychischer Gesundheit und Therapie verbunden ist \cite[S.21]{anthes_e_mental_2016} % (Anthes, 2016, S.21). 
+“Wenn die Menschen noch nicht vollständig bereit sind, ihren Arzt aufzusuchen, könnte dies ein erster Schritt sein, 
+um Hilfe zu suchen” \cite[S.21]{anthes_e_mental_2016}. % (Anthes, 2016, S.21).
+
+% Thema: PTSD App für Veteranen
+Zu einem der offensichtlichsten Vorteile von Mental Health Smartphone Apps gehört, 
+dass man diese auch unterwegs nutzen kann und somit unabhängig von einem bestimmten Ort 
+oder einem festgelegten Termin ist. Eine solche Flexibilität wurde beispielsweise auch im Rahmen einer 2010 
+von Psychologinnen und Psychologen der US Regierung durchgeführten Fokusgruppe von Kriegsveteranen 
+mit posttraumatischer Belastungsstörung gefordert, die sich ein Instrument wünschten, 
+das sie immer dann einsetzen könnten, wenn ihre Not am größten ist, um beispielsweise spontan auftretende 
+Symptome zu lindern, während sie sich gerade in der Schlange im Supermarkt befinden 
+\cite[S.21]{anthes_e_mental_2016}. % (Anthes, 2016, S.21). 
+Diese Erkenntnisse wurden vom National Center for PTSD des US Department of Veterans Affairs genutzt, 
+um in Kooperation mit dem US Department of Defense eine der zu dieser Zeit (Veröffentlichung 2011) 
+bekanntesten öffentlich verfügbaren Apps namens “PTSD Coach” zu entwickeln, 
+die von Betroffenen mit Traumaerfahrungen genutzt werden kann, um ihre Symptome nachzuverfolgen und zu bewältigen, 
+und praktische Lösungen für ihre Probleme bereitstellt \cite[S.21]{anthes_e_mental_2016}. % (Anthes, 2016, S.21).
+
+% Thema: viele Apps, aber wenig Evidenz
+Mittlerweile gibt es eine Vielzahl an MHAs auf dem Markt, die versprechen, die psychische Gesundheit 
+und das mentale Wohlbefinden zu verbessern. Dadurch kann es schwierig sein, 
+die passende App für die individuellen persönlichen Anforderungen zu finden. Hinzu kommt, 
+dass die meisten dieser Apps verschiedene Limitationen aufweisen, die für einen eingeschränkten Nutzen sorgen können.
+Viele der auf dem Markt verfügbaren Apps setzen beispielsweise erprobte Gestaltungsrichtlinien, 
+die mitunter auch für den Erfolg von Social Media Apps verantwortlich sind, oder weitere evidenzbasierte Richtlinien, 
+die für andere psychische selbsthilfe-Interventionen entwickelt wurden, nicht angemessen um 
+\cite[]{bakker_mental_2016}. % (Bakker, et al., 2016). 
+So fokussieren sich beispielsweise viele MHAs nur auf bestimmte Störungen und versuchen, 
+den Nutzenden eine diagnostische Einstufung zu liefern, obwohl sich gezeigt hat, dass ein solches Verfahren zur 
+Selbsteinstufung vor allem bei jungen Menschen mit psychischen Störungen schädlich und stigmatisierend sein kann 
+\cite[]{bakker_mental_2016,moses_self-labeling_2009}. \\ % (Bakker, et al., 2016; Moses, 2009).
+Darüber hinaus gilt, dass der Entwicklungsprozess von MHAs durch ein rigoroses experimentelles Testverfahren 
+begleitet werden sollte, um deren Wirksamkeit durch experimentelle Untersuchungen zu validieren, 
+was auch durch die Presidential Task Force on Evidence-Based Practice der American Psychological Association (APA) 
+empfohlen wird \cite[]{bakker_mental_2016,american_psychological_association_evidence-based_2006}. 
+% (Bakker, et al., 2016; APA Presidential Task Force on Evidence-Based Practice, 2006). 
+Ein systematisches Review hunderter auf dem Markt verfügbarer MHAs hat allerdings ergeben, 
+dass bei einem Großteil dieser Apps unzureichende oder fehlende wissenschaftliche Evidenz über deren Wirksamkeit 
+festgestellt werden konnte \cite[]{donker_smartphones_2013}. % (Donker, et al., 2013).
+
+% Thema: Probleme von MHAs (niedrige Adhärenzraten)
+Um die Wirksamkeit von therapeutischen Interventionen bewerten zu können, ist auch die Adheränz relevant. 
+Adheränz beschreibt das Ausmaß, in dem das Verhalten von Personen mit den vereinbarten Empfehlungen des Gesundheitsversorgers übereinstimmt \cite[S.3]{sabate_e_adherence_2003}. % (Sabaté, 2003, S.3). 
+Oder anders formuliert: Das Ausmaß, in dem die Therapieziele eingehalten werden 
+(sowohl von Patientinnen und Patienten, als auch von Seiten der Gesundheitsversorgung). 
+Teilweise wird auch der Begriff “Compliance” genutzt, um dieses Konzept zu beschreiben, was aber 
+aufgrund der Assoziation dieses Begriffs unterschieden werden sollte 
+\cite[S.4]{sabate_e_adherence_2003}. % (Sabaté, 2003, S.4). 
+Spricht man in diesem Kontext von Adheränz, so hat dies zum Ziel, zu verdeutlichen, 
+dass sowohl die Patientinnen und Patienten, als auch die Seite der Gesundheitsversorgung für die Einhaltung 
+der Therapieziele verantwortlich sind und nicht hauptsächlich oder ausschließlich die Patientinnen 
+und Patienten. \\
+Allgemein lässt sich sagen, dass eine schlechte Adhärenzrate neben negativen Auswirkungen auf die Gesundheit 
+und erhöhten Kosten für die Gesundheitspflege die Effektivität der Behandlung bei langfristigen Therapien 
+ernsthaft gefährden kann \cite[XIII]{sabate_e_adherence_2003}. % (Sabaté, 2003, XIII). 
+Dagegen haben “Interventionen, deren Ziel es ist, die Adheränz zu verbessern, 
+einen signifikanten positiven Return on Investment durch Primärprävention (von Risikofaktoren) 
+und Sekundärprävention von unerwünschten Gesundheitsauswirkungen” 
+\cite[XIII]{sabate_e_adherence_2003}. % (Sabté, 2003, XIII). 
+Eine höhere Adhärenz steht sehr wahrscheinlich in Verbindung zu einem verbesserten Behandlungsresultat 
+\cite[]{weisel_innovations_2021,fuhr_association_2018}. % (Weisel, K., 2021; Fuhr, et al, 2018).
+
+%Thema: Empfehlungen zur Entwicklung von MHAs
+Zusätzlich zu umfangreicher wissenschaftlicher Evidenz zur Wirksamkeit sind bei der Entwicklung von MHAs 
+auch noch einige weitere Faktoren zu beachten. 
+\cite{bakker_mental_2016}. % Bakker, et al. (2016) 
+haben in einer Übersicht eine Reihe an insgesamt 16 evidenzbasierten Empfehlungen formuliert, 
+die bei der Entwicklung von MHAs beachtet werden sollten:
+
+\begin{enumerate}
+    \item{Basierend auf kognitiver Verhaltenstherapie}
+    \item{Behandeln von sowohl Angststörungen, als auch Niedergeschlagenheit}
+    \item{Für die Verwendung durch nicht-klinische Bevölkerungsgruppen ausgelegt}
+    \item{Automatisierte Anpassung}
+    \item{Melden von Gedanken, Gefühlen oder Verhaltensweisen}
+    \item{Vorschlagen von Aktivitäten}
+    \item{Informationen über Mental Health}
+    \item{Echtzeit Engagement}
+    \item{Aktivitäten explizit in Verbindung mit spezifischen gemeldeten Stimmungsproblemen}
+    \item{Förderung nicht technologiebasierter Aktivitäten}
+    \item{Gamification und intrinsische Motivation, sich zu engagieren}
+    \item{Loggen der vergangenen App-Nutzung}
+    \item{Erinnerungen, sich zu engagieren}
+    \item{Simples und intuitives Interface und Interaktionen}
+    \item{Verlinkung von Krisenhilfsdiensten}
+    \item{Experimentelle Untersuchungen, um die Wirksamkeit nachzuweisen}
+\end{enumerate}
+
+Teil dieser Empfehlungen ist auch eine Implementierung von Gamification in MHAs, 
+um die intrinsische Motivation der Nutzenden zu fördern, sich zu engagieren und die App 
+regelmäßig zu nutzen (Empfehlung 11.). Auch in dieser Arbeit soll ein besonderes Augenmerk auf 
+diesen Aspekt gelegt werden und der Einsatz von Gamification im Kontext von MHAs genauer untersucht werden.
 
 
-\subsection{Definition von Gamification}\label{subsubsec:definition_gamification}
 
-\subsection{Einfluss von Gamification auf Motivation und Leistung}\label{subsubsec:einfluss_gamification_motivation_leistung}
+\section{Gamification}\label{subsec:gamification}
+
+
+
+\subsection{Gamification - Allgemeines, Hintergrund und Geschichte}\label{subsubsec:gamification_allgemein}
+
+\subsection{Game-Design-Elemente und deren Kategorisierung}\label{subsubsec:game_design_elemente}
+
+\subsection{Gamification im Kontext von Mental Health Apps}\label{subsubsec:gamification_in_mental_health_apps}
+
+\subsection{Forschungsprojekt PFH x UR}\label{subsubsec:forschungsproject}
 
 
 
 \section{Forschungsprojekt}\label{subsec:forschungsprojekt}
 
-%citation in text with page number
-Das ist eine Zitierung im Fließtext \cite[S. 6]{wagner2021psychische} oder \cite[S. 11]{mustermann2013test}. Zum austesten.
 
 
-Es gibt zahlreiche Ratgeber\index{Ratgeber} für das wissenschaftliche Arbeiten und Schreiben. Die Handbücher unterscheiden sich in inhaltlichen Schwerpunkt, praktischer Orientierung und Vertiefung der einzelnen Themen. Drei sehr empfehlenswerte Ratgeber sollen kurz vorgestellt werden.
-
-\cite{karmasin2012gestaltung} bieten einen sehr knappen und praktisch orientierten Ratgeber. Es werden inhaltliche und formale Anforderungen an wissenschaftliche Arbeiten wie inhaltlicher Aufbau der Kapitel, Bewertungskriterien und formale Aspekte wie Gliederung behandelt. Daneben enthält der Ratgeber ein eigenes Kapitel mit Tipps zur Formatierung mit Word.
-
-Das Handbuch von \cite{esselborn2012richtig} konzentriert sich auf die Frage nach dem richtigen wissenschaftlichen Sprachstil. Es werden konkrete Regeln und Übungen vorgestellt um sprachliche Präzision und gedankliche Klarheit im Text zu erreichen. Daneben wird in einem eigenen Kapitel auf die häufigsten Fehler beim wissenschaftlichen Schreiben hingewiesen.
-
-\cite{balzert2011wissenschaftliches} bieten einen sehr ausführlichen Ratgeber zum wissenschaftlichen Arbeiten. Im ersten Teil werden Qualitätskriterien und Methoden als Grundlagen wissenschaftlicher Arbeit aufgezeigt. Im zweiten Teil werden verschiedene wissenschaftliche Artefakte also Textformen gegenübergestellt und der formale Aufbau wissenschaftlicher Arbeiten beleuchtet. Im dritten Teil werden Empfehlungen zum Erstellungsprozess einer Arbeit mit Projektplan etc. gegeben. Im letzten Teil werden verschiedene Aspekte der Präsentation behandelt, wie z. B. Vortragsformen mit und ohne visuelle Unterstützung oder der richtige Vortragsstil.
